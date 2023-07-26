@@ -1,8 +1,13 @@
 module.exports = {
-    routes:[
-        {
-            path:'/login',
-            handler:"custom-todo"
-        }
-    ]
-}
+    routes: [
+      {
+        method: "GET",
+        path: "/custom",
+        handler: "custom-todo.custom",
+        config: {
+          policies: [],
+          middlewares: [],
+        },
+      },
+    ],
+  };

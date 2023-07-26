@@ -5,11 +5,11 @@
  */
 
 module.exports = {
-  // exampleAction: async (ctx, next) => {
-  //   try {
-  //     ctx.body = 'ok';
-  //   } catch (err) {
-  //     ctx.body = err;
-  //   }
-  // }
+  custom: async (ctx, next) => {
+    try {
+      ctx.body = 'ok';
+    } catch (err) {
+      ctx.body = err;
+    }
+  }
 };

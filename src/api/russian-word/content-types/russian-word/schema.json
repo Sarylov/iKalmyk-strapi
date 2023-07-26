@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "russian_words",
+  "info": {
+    "singularName": "russian-word",
+    "pluralName": "russian-words",
+    "displayName": "Русские слова"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "word": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

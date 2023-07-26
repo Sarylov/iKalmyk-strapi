@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "match_words",
+  "info": {
+    "singularName": "match-word",
+    "pluralName": "match-words",
+    "displayName": "Перевод"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kalmyk_words": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::kalmyk-word.kalmyk-word"
+    },
+    "russian_words": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::russian-word.russian-word"
+    }
+  }
+}

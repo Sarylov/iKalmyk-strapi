@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kalmyk_words",
+  "info": {
+    "singularName": "kalmyk-word",
+    "pluralName": "kalmyk-words",
+    "displayName": "Калмыцкие слова"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "word": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
