@@ -4,7 +4,8 @@
   "info": {
     "singularName": "match-word",
     "pluralName": "match-words",
-    "displayName": "Перевод"
+    "displayName": "Перевод",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,12 +15,26 @@
     "kalmyk_words": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::kalmyk-word.kalmyk-word"
+      "target": "api::kalmyk-word.kalmyk-word",
+      "mappedBy": "translate"
     },
     "russian_words": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::russian-word.russian-word"
+      "target": "api::russian-word.russian-word",
+      "mappedBy": "translate"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "image_url": {
+      "type": "text",
+      "required": false
     }
   }
 }

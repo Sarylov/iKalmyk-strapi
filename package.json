@@ -11,10 +11,12 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.11.7",
-    "@strapi/plugin-users-permissions": "4.11.7",
     "@strapi/plugin-i18n": "4.11.7",
-    "better-sqlite3": "8.0.1"
+    "@strapi/plugin-users-permissions": "4.11.7",
+    "@strapi/strapi": "4.11.7",
+    "better-sqlite3": "8.0.1",
+    "strapi-auto-uuid": "^0.0.8",
+    "strapi-plugin-untransform-response": "^0.1.6"
   },
   "author": {
     "name": "A Strapi developer"
