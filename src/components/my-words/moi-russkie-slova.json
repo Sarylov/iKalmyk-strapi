@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_my_words_moi_russkie_slova",
+  "info": {
+    "displayName": "мои русские слова",
+    "icon": "bold"
+  },
+  "options": {},
+  "attributes": {
+    "russian_word": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::russian-word.russian-word"
+    },
+    "studied": {
+      "type": "integer",
+      "min": 0,
+      "max": 10
+    }
+  }
+}

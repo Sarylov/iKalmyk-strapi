@@ -69,15 +69,17 @@
       "type": "string",
       "required": true
     },
-    "kalmyk_words": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::kalmyk-word.kalmyk-word"
+    "saved_kalmyk_words": {
+      "displayName": "мои слова",
+      "type": "component",
+      "repeatable": true,
+      "component": "my-words.moi-slova"
     },
-    "russian_words": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::russian-word.russian-word"
+    "saved_russian_words": {
+      "displayName": "мои русские слова",
+      "type": "component",
+      "repeatable": true,
+      "component": "my-words.moi-russkie-slova"
     }
   }
 }

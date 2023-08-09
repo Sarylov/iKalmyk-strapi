@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_my_words_moi_slova",
+  "info": {
+    "displayName": "мои калмыцкие слова",
+    "icon": "bold",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "kalmyk_word": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kalmyk-word.kalmyk-word"
+    },
+    "studied": {
+      "max": 10,
+      "default": 0,
+      "min": 0,
+      "type": "integer"
+    }
+  }
+}

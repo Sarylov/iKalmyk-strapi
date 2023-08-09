@@ -3,13 +3,10 @@ module.exports = (plugin) => {
     if (!ctx.state.user || !ctx.state.user.id) {
       return (ctx.responese.status = 401);
     }
-    await strapi
-      .query("plugin::users-permissions.user")
-      .update({
-        where: { id: ctx.state.user.id },
-        data: ctx.request.body,
-      })
-      .then(() => {
+    await
+    strapi.entityService.update('plugin::users-permissions.user', ctx.state.user.id, {
+      data: ctx.request.body
+    }).then(() => {
         ctx.response.status = 200;
       });
   };
