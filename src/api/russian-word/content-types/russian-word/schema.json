@@ -21,6 +21,14 @@
       "relation": "manyToOne",
       "target": "api::match-word.match-word",
       "inversedBy": "russian_words"
+    },
+    "added": {
+      "type": "integer",
+      "min": 0
+    },
+    "studed": {
+      "type": "integer",
+      "min": 0
     }
   }
 }
